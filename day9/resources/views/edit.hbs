@@ -1,0 +1,21 @@
+{{>header}}
+{{>navbar}}
+<section class="container my-5">
+    <form method="post">
+        <div class="mb-3">
+            <input placeholder="name" name="name" class="form-control" value="{{postData.name}}">
+             {{#if nameErr}}
+            <div class="text-danger">*{{nameErr}}</div>
+            {{/if}}
+        </div>
+        <div class="mb-3">
+            <input placeholder="email" name="email" class="form-control"
+             value="{{postData.email}}">
+        </div>
+        
+        <div class="mb-3">
+            <button class="btn btn-primary">Edit</button>
+        </div>
+    </form>
+</section>
+{{>footer}}

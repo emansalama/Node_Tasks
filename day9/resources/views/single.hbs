@@ -1,0 +1,15 @@
+{{>header}}
+{{>navbar}}
+<section class="container my-5">
+    {{#if postData}}
+    <h4 class="">{{postData.name}}</h4>
+    <span class="text-muted">{{postData.email}}</span>
+   
+    {{else}}
+    <div class="alert alert-danger text-center">
+        <p>Invalid user data</p>
+        <a href="/" class="btn btn-primary">Back Home</a>    
+    </div>
+    {{/if}}
+</section>
+{{>footer}}
